@@ -1,8 +1,8 @@
 FROM python:3-alpine
 
-LABEL maintainer="Sergey Besedin <kr3ssh@gmail.com>"
+LABEL maintainer="Thomas Bruckmann <thomas.bruckmann@posteo.de>"
 
-RUN pip install nextcloud_news_updater --install-option="--install-scripts=/usr/bin"
+RUN pip install nextcloud_news_updater
 
 COPY docker_entrypoint.sh /
 
