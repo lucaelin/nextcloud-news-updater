@@ -10,7 +10,7 @@ Nextcloud API:
   $ docker run -d -e NEXTCLOUD_URL=https://nextcloud.example.com/nextcloud \
                   -e NEXTCLOUD_ADMIN_USER=admin \
                   -e NEXTCLOUD_ADMIN_PASSWORD=password \
-                  romulus1689/nextcloud-news-updater
+                  ghcr.io/lucaelin/nextcloud-news-updater:latest
 ```
 
 Nextcloud mounted volume:
@@ -20,7 +20,7 @@ Nextcloud mounted volume:
                   -e NEXTCLOUD_ADMIN_USER=admin \
                   -e NEXTCLOUD_ADMIN_PASSWORD=password \
                   -v /var/www/nextcloud:/nextcloud \
-                  romulus1689/nextcloud-news-updater /nextcloud
+                  ghcr.io/lucaelin/nextcloud-news-updater:latest /nextcloud
 ```
 
 Usage with commandline options
@@ -30,7 +30,7 @@ Usage with commandline options
                   -e NEXTCLOUD_ADMIN_USER=admin \
                   -e NEXTCLOUD_ADMIN_PASSWORD=password \
                   -v /var/www/nextcloud:/nextcloud \
-                  romulus1689/nextcloud-news-updater --apilevel v15 --mode endless /nextcloud
+                  ghcr.io/lucaelin/nextcloud-news-updater:latest --apilevel v15 --mode endless /nextcloud
 ```
 
 # License
