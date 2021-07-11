@@ -7,7 +7,7 @@ NEXTCLOUD_ADMIN_USER=${NEXTCLOUD_ADMIN_USER:-admin}
 NEXTCLOUD_ADMIN_PASSWORD=${NEXTCLOUD_ADMIN_PASSWORD:-password}
 
 if [[ -z ${1} ]]; then
-  exec nextcloud-news-updater ${NEXTCLOUD_URL} --user ${NEXTCLOUD_ADMIN_USER} --password ${NEXTCLOUD_ADMIN_PASSWORD}
+  exec nextcloud-news-updater ${NEXTCLOUD_URL} --user ${NEXTCLOUD_ADMIN_USER} --password ${NEXTCLOUD_ADMIN_PASSWORD} --loglevel info
 else
   exec nextcloud-news-updater "$@"
 fi
